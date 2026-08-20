@@ -1,0 +1,397 @@
+<!doctype html>
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0b0b0b" name="theme-color"/>
+<meta content="Sharp vt Creation — photography studio in Washermanpet, Chennai. Wedding, outdoor, baby, maternity and engagement photography, plus frames, passport photos and customized gifts." name="description"/>
+<title>Sharp vt Creation | Photography Studio — Chennai</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#090909; --panel:#11110f; --cream:#f4eee4; --muted:#aaa39a;
+  --gold:#c7a66a; --line:rgba(255,255,255,.11); --white:#fff;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:"DM Sans",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92vw);margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;padding:20px 0;background:linear-gradient(#090909cc,transparent);transition:.3s}
+.nav.scrolled{background:#090909f2;border-bottom:1px solid var(--line);padding:14px 0;backdrop-filter:blur(12px)}
+.nav-in{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;height:76px}
+.brand-logo{display:block;width:260px;height:120px;object-fit:contain;object-position:left center;filter:invert(1) brightness(3.4) contrast(1.22);}
+.brand span{color:var(--gold)}
+.links{display:flex;gap:28px;font-size:13px;color:#ddd}.links a:hover{color:var(--gold)}
+.nav-cta{border:1px solid #ffffff33;padding:10px 15px;border-radius:999px;font-size:12px}
+.hero{min-height:100svh;position:relative;display:grid;align-items:end;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505d9 0%,#05050572 45%,#05050530),linear-gradient(0deg,#090909 0%,transparent 48%);z-index:1}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%;filter:saturate(.9)}.hero-slides{position:absolute;inset:0;z-index:0}.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 52%;filter:saturate(.9);opacity:0;transition:opacity .8s ease}.hero-slide.active{opacity:1}
+.hero-content{position:relative;z-index:2;padding:150px 0 82px 28px;max-width:680px;width:100%;margin-left:0;margin-right:auto;text-align:left;box-sizing:border-box;}
+.eyebrow{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(58px,9vw,110px);line-height:.82;font-weight:500;margin:0 0 28px;letter-spacing:-.03em}
+.hero p{font-size:16px;line-height:1.7;color:#ddd;max-width:560px;margin-left:0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:999px;font-weight:600;font-size:13px;transition:.25s}
+.btn-gold{background:var(--gold);color:#111}.btn-gold:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn-outline{border:1px solid #fff5;color:#fff;background:#0005}.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:45px}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:10px}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(44px,6vw,72px);font-weight:500;line-height:.9;margin:12px 0 0}
+.section-head p{max-width:380px;color:var(--muted);line-height:1.7;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:12px}
+.gallery figure{margin:0;position:relative;overflow:hidden;border-radius:2px;cursor:pointer;background:#151515}
+.gallery figure:nth-child(1){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(2){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(3){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(4){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(5){grid-column:span 4;grid-row:span 3}
+.gallery figure:nth-child(6){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(7){grid-column:span 4;grid-row:span 3}
+.gallery figure:nth-child(8){grid-column:span 4;grid-row:span 4}
+.gallery figure:nth-child(9){grid-column:span 4;grid-row:span 3}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;filter:saturate(.94)}
+.gallery figure:hover img{transform:scale(1.045)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 15px;background:linear-gradient(transparent,#000b);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.service{background:var(--panel);padding:30px 25px;min-height:155px;transition:.25s}
+.service:hover{background:#171613}.num{color:var(--gold);font-size:11px;letter-spacing:.15em}
+.service h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:500;margin:18px 0 8px}
+.service p{font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+.reviews{background:#f1eadf;color:#171411}
+.review-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:55px;align-items:start}
+.rating{font-family:"Cormorant Garamond",serif;font-size:90px;line-height:.8}
+.stars{color:#a57e39;letter-spacing:5px;font-size:18px;margin:18px 0}
+.review-count{color:#6d655c;font-size:13px}
+.review-list{display:grid;gap:1px;background:#17141122}
+.review{background:#f1eadf;border-top:1px solid #17141122;padding:25px 0}
+.review blockquote{font-family:"Cormorant Garamond",serif;font-size:27px;line-height:1.15;margin:0 0 14px}
+.review cite{font-style:normal;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#777}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:48px 0 0}
+.about-img{height:560px;overflow:hidden;border:1px solid var(--line);background:#111;border-radius:4px;box-shadow:0 24px 60px #0006}.about-img img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .8s ease}.about-img:hover img{transform:scale(1.02)}
+.about-copy{padding:10px 0}.about-copy h2{margin-bottom:20px}.about-copy p{color:var(--muted);line-height:1.85;font-size:15px;max-width:590px}
+.owner-section{margin-top:25px;display:grid;grid-template-columns:minmax(330px,470px) 1fr;gap:75px;align-items:center;padding:70px 55px;border:1px solid var(--line);background:linear-gradient(135deg,#12120f 0%,#0c0c0b 70%);border-radius:5px;box-shadow:0 30px 70px #0005}
+.owner-photo{height:540px;overflow:hidden;background:#151515;border:1px solid #ffffff1a;border-radius:3px;box-shadow:0 20px 45px #0007}
+.owner-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.owner-copy{max-width:650px}.owner-copy:before{content:"";display:block;width:48px;height:1px;background:var(--gold);margin-bottom:24px}
+.owner-copy h3{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,5.2vw,78px);font-weight:500;line-height:.88;margin:12px 0 10px;letter-spacing:-.02em}
+.owner-role{color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:30px}
+.owner-copy p{color:#b8b1a8;line-height:1.9;font-size:15px;max-width:600px}.owner-signature{margin-top:30px;font-family:"Cormorant Garamond",serif;font-size:27px;color:var(--cream);letter-spacing:.04em}
+#about>.about{margin-top:72px;padding-top:72px;border-top:1px solid var(--line)}
+.location{display:grid;grid-template-columns:1fr 1.1fr;min-height:510px}.location-right{display:block;min-height:510px}.location-banner{width:100%;height:100%;object-fit:cover;display:block}.location-photo-caption{position:absolute;left:18px;bottom:14px;color:#fff;background:#0009;padding:8px 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}.location-banner-wrap{position:relative;overflow:hidden}
+.location-copy{padding:55px;background:#151512}.address{color:#ccc;line-height:1.8;font-size:14px;margin:25px 0}.map{height:510px;min-height:510px;background:linear-gradient(135deg,#c7a66a33,#6aa8c733,#d86f8a33);padding:10px;border-radius:4px;overflow:hidden}.map iframe{width:100%;height:100%;min-height:490px;border:0;filter:none;border-radius:3px;display:block;box-shadow:0 12px 35px #0007;background:#dfe7dc}
+.cta{padding:110px 0;text-align:center;background:radial-gradient(circle at center,#211d15 0,#0a0a0a 55%)}
+.cta h2{font-size:clamp(54px,8vw,96px)}.cta p{color:var(--muted);margin:18px auto 28px}
+.footer-logo{display:block;width:300px;height:115px;object-fit:contain;object-position:left center;filter:invert(1) brightness(2.8) contrast(1.18);margin-bottom:0}
+.footer{border-top:1px solid var(--line);padding:30px 0;color:#888;font-size:11px}
+.footer-in{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:#ddd}
+.float{position:fixed;right:18px;bottom:18px;z-index:20;background:#25d366;color:#fff;padding:13px 17px;border-radius:999px;font-weight:700;font-size:12px;box-shadow:0 10px 30px #0008}
+.lightbox{position:fixed;inset:0;background:#000e;z-index:60;display:none;align-items:center;justify-content:center;padding:30px}
+.lightbox.open{display:flex}.lightbox img{max-width:min(94vw,1300px);max-height:88vh;object-fit:contain}
+.close{position:absolute;right:25px;top:20px;font-size:34px;color:#fff;cursor:pointer}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}.wa-btn,.nav-cta,.float{background:#25d366!important;color:#fff!important;border-color:#25d366!important}.nav-cta:hover,.float:hover{filter:brightness(1.06);transform:translateY(-2px)}.social-link.instagram{background:linear-gradient(135deg,#833ab4 0%,#c13584 32%,#e1306c 58%,#f77737 80%,#fcaf45 100%);border-color:#ffffff33;color:#fff;box-shadow:0 6px 18px #c1358444}.social-link.instagram:hover{filter:brightness(1.08);border-color:#fff6;color:#fff;transform:translateY(-2px)}.social-link.whatsapp{background:#25d366;border-color:#25d366;color:#fff}.social-link.whatsapp:hover{background:#1fbe5b;border-color:#1fbe5b;color:#fff}
+
+.film-poster{position:relative;aspect-ratio:16/9;overflow:hidden;background:#050505}.film-poster img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}.film-poster:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#000b,transparent 60%)}.play-badge{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border:1px solid #fff8;border-radius:50%;display:grid;place-items:center;background:#0008;color:#fff;font-size:18px}.film-ready{position:absolute;z-index:2;right:14px;top:14px;padding:7px 9px;border:1px solid #ffffff55;background:#0008;border-radius:999px;font-size:9px;letter-spacing:.15em;color:#fff}.film-card-copy p{font-size:11px;color:var(--muted);line-height:1.6;margin:8px 0 0}.film-card-copy strong{color:#ddd}.puberty-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.puberty-grid figure{margin:0;position:relative;overflow:hidden;height:520px;background:#111}.puberty-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}.puberty-grid figure:hover img{transform:scale(1.03)}.puberty-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:35px 18px 16px;background:linear-gradient(transparent,#000c);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.social-bar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;background:#0d0d0c}.social-in{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.social-copy{font-size:12px;color:var(--muted)}.social-copy strong{color:var(--cream)}.social-links{display:flex;gap:10px;flex-wrap:wrap}.social-link{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff22;padding:10px 14px;border-radius:999px;font-size:12px;background:#11110f;transition:.25s}.social-link:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}.social-link svg{width:17px;height:17px;display:block}.film-section{background:#0d0d0c}.film-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.film-card{overflow:hidden;border:1px solid var(--line);background:#111;border-radius:4px}.film-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#050505}.film-card-copy{padding:16px 18px}.film-card-copy h3{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:500;margin:8px 0 0}
+.film-extra{display:none}.film-more-wrap{display:flex;justify-content:center;margin-top:26px}.film-more{cursor:pointer}
+
+@media(max-width:850px){
+ .brand-logo{width:210px;height:100px}.links{display:none}.hero-content{padding:140px 0 70px 24px;margin-left:0;margin-right:auto}.hero img{object-position:58% center}
+ .section{padding:75px 0}.section-head,.about,.review-grid,.location{display:block}
+ .section-head p{margin-top:22px}.owner-section{display:block;padding:45px 28px}.owner-photo{height:460px;margin-bottom:38px}.owner-copy{max-width:none}.about{gap:35px}.about-img{height:420px}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}
+ .gallery figure{grid-column:span 1!important;grid-row:span 1!important}.gallery figure:nth-child(1),.gallery figure:nth-child(4),.gallery figure:nth-child(6),.gallery figure:nth-child(8){grid-row:span 2!important}
+ .services{grid-template-columns:repeat(2,1fr)}.film-grid{grid-template-columns:repeat(2,1fr)}.puberty-grid{grid-template-columns:1fr}.puberty-grid figure{height:420px}.about-img{height:420px;margin-bottom:35px}.location-copy{padding:40px 25px}.location-right{min-height:380px}.map{height:420px;min-height:420px}.map iframe{min-height:400px}
+}
+
+@media(max-width:900px){
+  .brand-logo{width:230px;height:105px}
+  .hero-content{max-width:620px;margin-left:0;margin-right:auto;padding:140px 0 70px 24px}
+}
+
+@media(max-width:520px){.brand-logo{width:210px;height:100px;filter:invert(1) brightness(3.4) contrast(1.22)}.footer-logo{width:220px;height:84px;filter:invert(1) brightness(2.8) contrast(1.18)}.owner-section{padding:35px 20px}.owner-photo{height:390px}h1{font-size:61px}.services{grid-template-columns:1fr}.film-grid{grid-template-columns:1fr}.gallery{grid-auto-rows:170px}.hero p{font-size:14px}.btn{width:100%}}
+
+.hero-slide{transform:scale(1);transition:opacity .8s ease,transform 3.5s ease}
+.hero-slide.active{opacity:1;transform:scale(1.055)}
+
+.portfolio-categories{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 55px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.portfolio-categories a{padding:10px 15px;border:1px solid #ffffff22;border-radius:999px;color:#ddd;font-size:11px;transition:.25s;background:#0d0d0c}
+.portfolio-categories a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
+.portfolio-collections{display:grid;gap:85px}
+.portfolio-category{scroll-margin-top:100px}
+.portfolio-category-head{display:grid;grid-template-columns:1fr 390px;align-items:end;gap:35px;margin-bottom:25px}
+.portfolio-category-head h3{font-family:"Cormorant Garamond",serif;font-size:clamp(42px,5vw,64px);font-weight:500;line-height:.9;margin:10px 0 0}
+.portfolio-category-head p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.portfolio-category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.portfolio-category-grid figure{margin:0;position:relative;overflow:hidden;height:390px;background:#151515;cursor:pointer}
+.portfolio-category-grid-two{grid-template-columns:repeat(2,1fr)}
+.portfolio-category-grid-two figure{height:520px}
+.portfolio-category-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease;filter:saturate(.94)}
+.portfolio-category-grid figure:hover img{transform:scale(1.045)}
+.portfolio-category-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 15px 14px;background:linear-gradient(transparent,#000c);font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+.portfolio-extra{display:none}
+.portfolio-reveal-grid.is-expanded .portfolio-extra{display:block}
+.portfolio-more-btn{display:flex;align-items:center;gap:10px;margin:20px auto 0;padding:12px 22px;border:1px solid #ffffff2b;border-radius:999px;background:#0d0d0c;color:#eee;font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.25s}
+.portfolio-more-btn:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-1px)}
+.portfolio-more-btn span{font-size:16px;line-height:1}
+.portfolio-reveal-grid.is-expanded + .portfolio-more-btn span{transform:rotate(45deg)}
+
+@media(max-width:850px){
+ .portfolio-category-head{grid-template-columns:1fr;gap:14px}
+ .portfolio-category-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+ .portfolio-category-grid figure,.portfolio-category-grid-two figure{height:300px}
+ .portfolio-collections{gap:65px}
+ .portfolio-categories{overflow-x:auto;flex-wrap:nowrap;padding-bottom:14px;scrollbar-width:none}
+ .portfolio-categories::-webkit-scrollbar{display:none}
+ .portfolio-categories a{white-space:nowrap;flex:0 0 auto}
+}
+@media(max-width:520px){
+ .portfolio-category-grid{grid-template-columns:repeat(2,1fr)}
+ .portfolio-category-grid figure,.portfolio-category-grid-two figure{height:235px}
+ .portfolio-category-head h3{font-size:43px}
+ .portfolio-category-head p{font-size:12px}
+ .portfolio-collections{gap:55px}
+ .portfolio-categories{margin-bottom:38px}
+}
+
+.portfolio-category-grid-two .portfolio-full-image{background:#f4eee4}
+.portfolio-category-grid-two .portfolio-full-image img{object-fit:contain}
+
+#bridal-makeup .portfolio-category-grid-two{
+  grid-template-columns:minmax(0,1fr);
+  max-width:780px;
+}
+
+#love-stories .portfolio-category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}#love-stories .portfolio-category-grid figure{margin:0;overflow:hidden}#love-stories .portfolio-category-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}#love-stories .portfolio-more-wrap{text-align:center;margin-top:22px}@media(max-width:768px){#love-stories .portfolio-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}</style>
+<style>
+/* Final requested adjustment: slightly more left spacing for hero text */
+.hero-content {
+  padding-left: clamp(18px, 2.5vw, 42px) !important;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="nav" id="nav"><div class="wrap nav-in">
+<a aria-label="Sharp vt Creation home" class="brand" href="#"><img alt="Sharp vt Creation" class="brand-logo" src="assets/sharp-vt-creation-logo.png"/></a>
+<div class="links"><a href="#portfolio">Portfolio</a><a href="#films">Films</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#location">Location</a></div>
+<a class="nav-cta" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot.">WhatsApp</a>
+</div></nav>
+<header class="hero">
+<div aria-label="Featured photography" class="hero-slides">
+<img alt="Sharp vt Creation wedding photography" class="hero-slide active" fetchpriority="high" src="assets/home-hero-1.jpg"/>
+<img alt="Sharp vt Creation traditional wedding photography" class="hero-slide" loading="eager" src="assets/home-hero-2.jpg"/>
+<img alt="Sharp vt Creation outdoor wedding photography" class="hero-slide" loading="eager" src="assets/home-hero-3.jpg"/>
+</div>
+<div class="wrap hero-content reveal">
+<div class="eyebrow">Photography Studio · Chennai</div>
+<h1>Your day.<br/>Your story.</h1>
+<p>Sharp vt Creation captures weddings, outdoor moments, baby milestones, maternity portraits and celebrations with a personal, story-first approach.</p>
+<div class="actions">
+<a class="btn btn-gold wa-btn" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20book%20a%20date.">Book on WhatsApp ↗</a>
+<a class="btn btn-outline" href="#portfolio">View Portfolio ↓</a>
+</div></div>
+</header>
+<section class="section wrap portfolio-section" id="portfolio">
+<div class="section-head reveal"><div><div class="kicker">Portfolio</div><h2>Stories in every frame.</h2></div><p>Explore our photography by occasion. Each collection is presented separately so customers can quickly find the style they are looking for.</p></div>
+<div aria-label="Portfolio categories" class="portfolio-categories reveal"><a href="#baby-shoot">Baby Shoot</a><a href="#baby-shower">Baby Shower</a><a href="#wedding-photography">Wedding Photography</a><a href="#puberty-function">Puberty Function</a><a href="#maternity-shoot">Maternity Shoot</a><a href="#pre-wedding-shoot">Pre-Wedding Shoot</a><a href="#bridal-portraits">Bridal Portraits</a><a href="#bridal-makeup">Bridal Makeup</a></div>
+<div class="portfolio-collections">
+<section class="portfolio-category" id="baby-shoot">
+<div class="portfolio-category-head"><div><div class="kicker">01 · Little moments</div><h3>Baby Shoot</h3></div><p>Sweet baby portraits, milestone memories and creative studio sessions.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid">
+<figure><img alt="Baby shoot photography" loading="lazy" src="assets/photo-1.jpg"/><figcaption>Baby Portrait</figcaption></figure>
+<figure><img alt="Newborn baby photography" loading="lazy" src="assets/photo-8.jpg"/><figcaption>Newborn Memories</figcaption></figure>
+<figure><img alt="Baby Krishna themed photography" loading="lazy" src="assets/baby-krishna.jpg"/><figcaption>Baby Krishna</figcaption></figure>
+<figure><img alt="Baby Boss themed studio portrait" loading="lazy" src="assets/baby-boss.jpg"/><figcaption>Little Boss</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby birthday theme photography" loading="lazy" src="assets/baby-theme-birthday.jpg"/><figcaption>Birthday Theme</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby portrait photography" loading="lazy" src="assets/photo-2.jpg"/><figcaption>Little Dreamer</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby celebration photography" loading="lazy" src="assets/photo-9.jpg"/><figcaption>Celebration Moment</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Little girl traditional baby photography" loading="lazy" src="assets/portfolio/portfolio-new-1.jpg"/><figcaption>Traditional Little One</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby outdoor photography" loading="lazy" src="assets/portfolio/portfolio-new-2.webp"/><figcaption>Outdoor Baby</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby outdoor portrait photography" loading="lazy" src="assets/portfolio/portfolio-new-3.jpg"/><figcaption>Baby Milestone</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Baby girl portrait photography" loading="lazy" src="assets/portfolio/portfolio-new-4.webp"/><figcaption>Happy Baby</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Family and baby outdoor photography" loading="lazy" src="assets/baby-family-new.webp"/><figcaption>Family Baby Portrait</figcaption></figure>
+</div>
+<button aria-expanded="false" class="portfolio-more-btn" type="button">View More <span>＋</span></button>
+</section>
+<section class="portfolio-category" id="baby-shower"><div class="portfolio-category-head"><div><div class="kicker">02 · Celebrating new beginnings</div><h3>Baby Shower</h3></div><p>Beautiful baby shower portraits, celebration details and joyful memories for a growing family.</p></div><div class="portfolio-category-grid portfolio-category-grid-two"><figure class="portfolio-full-image"><img alt="Baby shower portrait photography" loading="lazy" src="assets/baby-shower-memories.jpg"/><figcaption>Baby Shower Memories</figcaption></figure><figure class="portfolio-full-image"><img alt="Baby shower ceremony photography" loading="lazy" src="assets/baby-shower-ceremony.jpg"/><figcaption>Baby Shower Ceremony</figcaption></figure></div></section><section class="portfolio-category" id="wedding-photography">
+<div class="portfolio-category-head"><div><div class="kicker">03 · Forever together</div><h3>Wedding Photography</h3></div><p>Wedding ceremonies, couples, candid celebrations and timeless family moments.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid">
+<figure><img alt="Wedding couple photography" loading="lazy" src="assets/wedding-couple.jpg"/><figcaption>Wedding Couple</figcaption></figure>
+<figure><img alt="Outdoor wedding photography" loading="lazy" src="assets/wedding-outdoor.jpg"/><figcaption>Outdoor Wedding</figcaption></figure>
+<figure><img alt="Wedding ceremony photography" loading="lazy" src="assets/wedding-ceremony.jpg"/><figcaption>Ceremony Moments</figcaption></figure>
+<figure><img alt="Elegant couple wedding photography" loading="lazy" src="assets/elegant-couple.jpg"/><figcaption>Elegant Couple</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Wedding couple portrait photography" loading="lazy" src="assets/wedding-couple-portrait.jpg"/><figcaption>Wedding Portrait</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Wedding bridal portrait photography" loading="lazy" src="assets/photo-4.jpg"/><figcaption>Wedding Details</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Groom portrait wedding photography" loading="lazy" src="assets/groom-style.jpg"/><figcaption>Groom Style</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Wedding couple portrait photography" loading="lazy" src="assets/wedding-brick-couple.webp"/><figcaption>Couple Portrait</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Outdoor wedding couple photography" loading="lazy" src="assets/wedding-garden-couple.webp"/><figcaption>Garden Couple</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Traditional wedding ceremony photography" loading="lazy" src="assets/wedding-ceremony-new.jpg"/><figcaption>Traditional Ceremony</figcaption></figure></div>
+<button aria-expanded="false" class="portfolio-more-btn" type="button">View More <span>＋</span></button>
+</section>
+<section class="portfolio-category" id="puberty-function">
+<div class="portfolio-category-head"><div><div class="kicker">04 · Growing moments</div><h3>Puberty Function</h3></div><p>Traditional portraits, family moments and the details of an important milestone.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid portfolio-category-grid-two">
+<figure><img alt="Traditional puberty function portrait photography" loading="lazy" src="assets/puberty-traditional.jpg"/><figcaption>Traditional Ceremony Portrait</figcaption></figure>
+<figure><img alt="Puberty function portrait photography" loading="lazy" src="assets/puberty-portrait.jpg"/><figcaption>Celebration Portrait</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Traditional young girl portrait photography" loading="lazy" src="assets/portfolio/portfolio-new-6.webp"/><figcaption>Traditional Portrait</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Young girl traditional portrait photography" loading="lazy" src="assets/puberty-red-portrait.webp"/><figcaption>Red Dress Portrait</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Traditional saree portrait photography" loading="lazy" src="assets/puberty-traditional-blue.webp"/><figcaption>Traditional Saree Portrait</figcaption></figure>
+</div>
+<button aria-expanded="false" class="portfolio-more-btn" type="button">View More <span>＋</span></button>
+</section>
+<section class="portfolio-category" id="maternity-shoot">
+<div class="portfolio-category-head"><div><div class="kicker">05 · Motherhood memories</div><h3>Maternity Shoot</h3></div><p>Elegant maternity portraits, couple sessions and natural outdoor memories.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid">
+<figure><img alt="Maternity beach photography" loading="lazy" src="assets/maternity-beach.jpg"/><figcaption>Maternity Beach</figcaption></figure>
+<figure><img alt="Maternity couple beach photography" loading="lazy" src="assets/maternity-couple-beach.jpg"/><figcaption>Maternity Couple</figcaption></figure>
+<figure><img alt="Maternity beach photography in yellow dress" loading="lazy" src="assets/maternity-beach-yellow.jpg"/><figcaption>Golden Maternity</figcaption></figure>
+</div>
+</section>
+<section class="portfolio-category" id="pre-wedding-shoot">
+<div class="portfolio-category-head"><div><div class="kicker">06 · Before the forever</div><h3>Pre-Wedding Shoot</h3></div><p>Romantic couple portraits and cinematic outdoor stories before the big day.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid">
+<figure><img alt="Pre wedding couple sunset photography" loading="lazy" src="assets/couple-sunset.jpg"/><figcaption>Sunset Love</figcaption></figure>
+<figure><img alt="Pre wedding love story photography" loading="lazy" src="assets/real-love-stories.jpg"/><figcaption>Real Love Story</figcaption></figure>
+<figure><img alt="Couple proposal photography" loading="lazy" src="assets/wedding-proposal.jpg"/><figcaption>Proposal Story</figcaption></figure>
+<figure><img alt="Pre wedding couple outdoor photography" loading="lazy" src="assets/prewedding-garden-couple.jpg"/><figcaption>Garden Love Story</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Outdoor couple pre wedding photography" loading="lazy" src="assets/photo-3.jpg"/><figcaption>Outdoor Romance</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Cinematic couple proposal photography" loading="lazy" src="assets/photo-6.jpg"/><figcaption>Cinematic Proposal</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Cinematic night pre wedding couple photography" loading="lazy" src="assets/prewedding-night-couple.jpg"/><figcaption>Night Love Story</figcaption></figure>
+</div>
+<button aria-expanded="false" class="portfolio-more-btn" type="button">View More <span>＋</span></button>
+</section>
+<section class="portfolio-category" id="bridal-portraits">
+<div class="portfolio-category-head"><div><div class="kicker">07 · Bridal elegance</div><h3>Bridal Portraits</h3></div><p>Elegant bridal portraits with studio lighting, traditional styling and refined details.</p></div>
+<div class="portfolio-category-grid portfolio-reveal-grid">
+<figure><img alt="Bridal portrait with red studio lighting" loading="lazy" src="assets/bridal-red-light-portrait.jpg"/><figcaption>Bridal Portrait</figcaption></figure>
+<figure><img alt="Elegant bridal portrait photography" loading="lazy" src="assets/bridal-red-light-portrait-2.jpg"/><figcaption>Elegant Bridal</figcaption></figure>
+<figure><img alt="Classic bridal portrait photography" loading="lazy" src="assets/bridal-red-light-portrait-3.jpg"/><figcaption>Classic Bridal</figcaption></figure>
+<figure><img alt="Bride doorway portrait photography" loading="lazy" src="assets/bride-doorway.jpg"/><figcaption>Beautiful Journey</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Bridal portrait photography" loading="lazy" src="assets/photo-5.jpg"/><figcaption>Bridal Glow</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Traditional bride portrait photography" loading="lazy" src="assets/photo-4.jpg"/><figcaption>Traditional Bride</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Traditional bridal portrait photography" loading="lazy" src="assets/portfolio/portfolio-new-5.webp"/><figcaption>Golden Bridal</figcaption></figure>
+<figure class="portfolio-extra"><img alt="Bridal portrait in blue lehenga" loading="lazy" src="assets/bridal-portrait-blue-lehenga-1.jpg"/><figcaption>Blue Bridal Portrait</figcaption></figure><figure class="portfolio-extra"><img alt="Bridal portrait in blue lehenga" loading="lazy" src="assets/bridal-portrait-blue-lehenga-2.jpg"/><figcaption>Blue Bridal Portrait — Classic</figcaption></figure></div>
+<button aria-expanded="false" class="portfolio-more-btn" type="button">View More <span>＋</span></button>
+</section><section class="portfolio-category" id="bridal-makeup"><div class="portfolio-category-head"><div><div class="kicker">08 · Beauty in every detail</div><h3>Bridal Makeup</h3></div><p>Detailed bridal makeup portraits showcasing elegant styling, beauty preparation and timeless finishing.</p></div><div class="portfolio-category-grid portfolio-category-grid-two"><figure class="portfolio-full-image"><img alt="Bridal makeup photography and beauty preparation" loading="lazy" src="assets/bridal-makeup-shoot.jpg"/><figcaption>Bridal Makeup Shoot</figcaption></figure></div></section><section class="portfolio-category" id="love-stories"><div class="portfolio-category-head"><div class="kicker">LOVE STORIES</div><h3>Everyday Love Stories</h3><p>Candid couples, real smiles and beautifully ordinary moments turned into memories.</p></div><div class="portfolio-category-grid"><figure><img alt="Everyday Love Stories photograph 1" loading="lazy" src="assets/portfolio/love-stories/love-story-1.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 2" loading="lazy" src="assets/portfolio/love-stories/love-story-2.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 3" loading="lazy" src="assets/portfolio/love-stories/love-story-3.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 4" loading="lazy" src="assets/portfolio/love-stories/love-story-4.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 5" loading="lazy" src="assets/portfolio/love-stories/love-story-5.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 6" loading="lazy" src="assets/portfolio/love-stories/love-story-6.jpeg"/><figcaption>Love Story</figcaption></figure><figure><img alt="Everyday Love Stories photograph 7" loading="lazy" src="assets/portfolio/love-stories/love-story-7.jpeg"/><figcaption>Love Story</figcaption></figure></div><div class="portfolio-more-wrap"><button aria-expanded="false" class="btn btn-outline portfolio-more" type="button">View More</button></div></section>
+</div>
+</section>
+<section class="section film-section" id="films"><div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">Cinematic moments</div><h2>Wedding films &amp; reels.</h2></div><p>Watch selected wedding moments, behind-the-scenes work and bridal stories. Tap play on any reel to watch it with sound and controls.</p></div>
+<div class="film-grid reveal">
+<div class="film-card"><video controls="" playsinline="" poster="assets/videos/wedding-reel-1.jpg" preload="metadata"><source src="assets/videos/wedding-reel-1.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Wedding Reel</div><h3>Wedding Moments</h3><p>A short vertical wedding reel capturing the celebration and emotion.</p></div></div>
+<div class="film-card"><video controls="" playsinline="" poster="assets/videos/wedding-film-2.jpg" preload="metadata"><source src="assets/videos/wedding-film-2.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Wedding Film</div><h3>Wedding Story</h3><p>A longer wedding film for reliving the special moments.</p></div></div>
+<div class="film-card"><video controls="" playsinline="" poster="assets/videos/wedding-reel-3.jpg" preload="metadata"><source src="assets/videos/wedding-reel-3.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Wedding Reel</div><h3>Celebration Reel</h3><p>A vertical highlight reel featuring the wedding atmosphere and memories.</p></div></div>
+<div class="film-card film-extra"><video controls="" playsinline="" poster="assets/videos/behind-the-scenes.jpg" preload="metadata"><source src="assets/videos/behind-the-scenes.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Behind the Scenes</div><h3>Behind the Camera</h3><p>A look at the creative work and moments behind the shoot.</p></div></div>
+<div class="film-card film-extra"><video controls="" playsinline="" poster="assets/videos/wedding-couple-reel.jpg" preload="metadata"><source src="assets/videos/wedding-couple-reel.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Wedding Reel</div><h3>Couple Portrait Session</h3><p>A romantic studio session featuring a traditional wedding couple.</p></div></div>
+<div class="film-card film-extra"><video controls="" playsinline="" poster="assets/videos/bridal-beauty-reel.jpg" preload="metadata"><source src="assets/videos/bridal-beauty-reel.mp4" type="video/mp4"/>Your browser does not support video playback.</video><div class="film-card-copy"><div class="kicker">Bridal Story</div><h3>Bridal Beauty</h3><p>A cinematic bridal preparation and beauty highlight.</p></div></div>
+</div><div class="film-card film-extra">
+<video controls playsinline preload="metadata" src="assets/videos/love-story-session.mp4"></video>
+<div class="film-card-copy">
+<div class="kicker">Love Story Reel</div>
+<h3>Everyday Love Story</h3>
+<p>A cinematic look at a couple's natural moments, laughter and connection.</p>
+</div>
+</div>
+<div class="film-more-wrap"><button aria-expanded="false" class="btn btn-outline film-more" id="filmMore" type="button">View More Films ↓</button></div>
+</div></section>
+<section class="section" id="services"><div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">What we offer</div><h2>Photography &amp; studio services.</h2></div></div>
+<div class="services reveal">
+<div class="service"><div class="num">01</div><h3>Wedding Photography</h3><p>Photography for your wedding day and its important moments.</p></div>
+<div class="service"><div class="num">02</div><h3>Outdoor Photoshoot</h3><p>Couples, portraits and outdoor stories in natural locations.</p></div>
+<div class="service"><div class="num">03</div><h3>Baby Shoot</h3><p>Creative baby portraits and milestone memories.</p></div>
+<div class="service"><div class="num">04</div><h3>Maternity Shoot</h3><p>Portrait sessions celebrating the journey to parenthood.</p></div>
+<div class="service"><div class="num">05</div><h3>Engagement Shoot</h3><p>Portraits for your engagement and the story around it.</p></div>
+<div class="service"><div class="num">06</div><h3>All Size Frames</h3><p>Frames for preserving and displaying your favourite photographs.</p></div>
+<div class="service"><div class="num">07</div><h3>Passport Size Photos</h3><p>Passport-size photo service from the studio.</p></div>
+<div class="service"><div class="num">08</div><h3>Customized Gifts</h3><p>Personalized photo gift options available from the studio.</p></div>
+</div></div></section>
+<section class="section reviews" id="reviews"><div class="wrap">
+<div class="review-grid">
+<div class="reveal"><div class="kicker">Our Happy Customers</div><div class="rating">5.0</div><div class="stars">★★★★★</div><div class="review-count">20 reviews on Google</div><div style="margin-top:25px"><a class="btn btn-outline" href="https://www.google.com/maps/place/Sharp_vt_creation_/@13.1139115,80.2864694,816m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a526f005116ced5:0x59126494fda093a5!8m2!3d13.1139115!4d80.2864694!16s%2Fg%2F11z6d21bf2?entry=ttu&amp;g_ep=EgoyMDI2MDgxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+   View Google Maps ↗
+</a></div></div>
+<div class="review-list reveal">
+<div class="review"><blockquote>“Thank you sooo much for capturing our beautiful wedding event. Really amazed by your work. Hoping to continue you again for some other event soon…”</blockquote><cite>Ramesh · Google Review</cite></div>
+<div class="review"><blockquote>“One of the best photographers! The photos and editing were outstanding, and every special moment was captured perfectly.”</blockquote><cite>Proiya · Google Review</cite></div>
+<div class="review"><blockquote>“The picture quality, color grading, and framing were top-notch.”</blockquote><cite>Happy Customer · Google Review</cite></div>
+<div class="review"><blockquote>“I loved their work very much and their service also.”</blockquote><cite>Happy Customer · Google Review</cite></div>
+</div></div></div></section>
+<section class="section wrap" id="about">
+<div class="owner-section">
+<div class="owner-photo reveal"><img alt="V. Veerababu, Founder and Creative Director of Sharp vt Creation" loading="lazy" src="assets/owner-founder.jpg"/></div>
+<div class="owner-copy reveal">
+<div class="kicker">Meet the Founder</div>
+<h3>V. Veerababu</h3>
+<div class="owner-role">Founder &amp; Creative Director · 10 Years of Photography Experience</div>
+<p>V. Veerababu is the founder and creative force behind Sharp vt Creation, bringing 10 years of hands-on experience in photography and a passion for turning genuine moments into timeless visual stories.</p>
+<p>From weddings and portraits to family celebrations, his approach combines thoughtful composition, natural expressions and polished professional editing to create photographs that families can treasure for years.</p>
+<div class="owner-signature">Sharp vt Creation</div>
+</div>
+</div>
+<div class="about">
+<div class="about-img reveal"><img alt="Sharp vt Creation studio" loading="lazy" src="assets/photo-7.jpg"/></div>
+<div class="about-copy reveal"><div class="kicker">About the studio</div><h2>Sharp vt Creation</h2>
+<p>Sharp vt Creation is a photography studio in NN Garden, Washermanpet, Chennai, dedicated to turning real moments into photographs that feel timeless, personal and beautifully crafted.</p>
+<p>With the experience and creative direction of V. Veerababu, the studio covers weddings, engagements, outdoor portraits, baby milestones, maternity sessions and other family celebrations with a personal, story-first approach.</p>
+<p>Alongside photography, the studio also offers frames, passport photos and customized gifts, making it a convenient destination for preserving and presenting special memories.</p>
+<a class="btn btn-gold" href="tel:+919791078826">Call the Studio</a>
+</div></div>
+</section>
+<section class="section wrap" id="location"><div class="location">
+<div class="location-copy reveal"><div class="kicker">Visit the studio</div><h2>Find us in Washermanpet.</h2>
+<div class="address"><strong>Sharp vt Creation</strong><br/>22/77, Peramballu St, NN Garden,<br/>Washermanpet, Chennai,<br/>Tamil Nadu 600021</div>
+<p style="color:#aaa;font-size:12px;line-height:1.7">Public Google Maps listing shows the studio at this address.</p>
+<a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&amp;destination=Sharp%20vt%20Creation%2C%2022%2F77%20Peramballu%20St%2C%20NN%20Garden%2C%20Washermanpet%2C%20Chennai%2C%20Tamil%20Nadu%20600021" target="_blank">Get Directions ↗</a>
+</div>
+<div class="location-right reveal"><div class="map"><iframe allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sharp%20vt%20Creation%2C%2022%2F77%20Peramballu%20St%2C%20NN%20Garden%2C%20Washermanpet%2C%20Chennai%2C%20Tamil%20Nadu%20600021&amp;z=17&amp;output=embed" title="Sharp vt Creation location"></iframe></div></div>
+</div></section>
+<section class="cta"><div class="wrap reveal"><div class="kicker">Let's make it memorable</div><h2>Book Your Date.</h2><p>Tell us what you're planning and we'll take it from there.</p><div class="actions" style="justify-content:center"><a class="btn btn-gold wa-btn" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20book%20a%20date.">WhatsApp Us ↗</a><a class="btn btn-outline" href="tel:+919791078826">Call 97910 78826</a></div></div></section>
+<section class="social-bar"><div class="wrap social-in"><div class="social-copy"><strong>Follow Sharp vt Creation</strong> · New work, reels &amp; studio updates</div><div class="social-links">
+<a class="social-link instagram" href="https://www.instagram.com/sharp_vt_creation_/" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.7" fill="currentColor" r="1" stroke="none"></circle></svg> @sharp_vt_creation_</a>
+<a class="social-link whatsapp" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot."><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.6-1.7a11.8 11.8 0 0 0 5.3 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3ZM12.2 21.6h-.1c-1.7 0-3.3-.5-4.7-1.4l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.4Z"></path></svg> WhatsApp</a>
+</div></div></section>
+<footer class="footer"><div class="wrap footer-in"><div><img alt="Sharp vt Creation" class="footer-logo" src="assets/sharp-vt-creation-logo.png"/><div>Photography Studio</div></div><div>22/77 Peramballu St, NN Garden, Washermanpet, Chennai · <a href="tel:+919791078826">97910 78826</a> · <a href="tel:+917812805350">78128 05350</a></div><div>© 2026 Sharp vt Creation</div></div></footer>
+<div class="lightbox" id="lightbox"><span class="close" id="close">×</span><img alt="" id="lightboxImg"/></div>
+<script>
+const heroSlides=[...document.querySelectorAll('.hero-slide')];
+let heroIndex=0;
+setInterval(()=>{
+  if(heroSlides.length>1){
+    heroSlides[heroIndex].classList.remove('active');
+    heroIndex=(heroIndex+1)%heroSlides.length;
+    heroSlides[heroIndex].classList.add('active');
+  }
+},3500);
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));
+const lb=document.getElementById('lightbox'), lbi=document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery figure').forEach(f=>f.addEventListener('click',()=>{lbi.src=f.querySelector('img').src;lbi.alt=f.querySelector('img').alt;lb.classList.add('open')}));
+document.getElementById('close').onclick=()=>lb.classList.remove('open');
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+document.querySelectorAll('.portfolio-more-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const grid=btn.previousElementSibling;
+    const open=grid.classList.toggle('is-expanded');
+    btn.setAttribute('aria-expanded',String(open));
+    btn.innerHTML=open?'Show Less <span>−</span>':'View More <span>＋</span>';
+  });
+});
+const filmMore=document.getElementById('filmMore');
+filmMore?.addEventListener('click',()=>{const extras=document.querySelectorAll('.film-extra');const open=filmMore.getAttribute('aria-expanded')==='true';extras.forEach(card=>card.style.display=open?'none':'block');filmMore.setAttribute('aria-expanded',String(!open));filmMore.textContent=open?'View More Films ↓':'Show Less ↑';});
+</script>
+<script>document.addEventListener("DOMContentLoaded",()=>{const s=document.getElementById("love-stories");if(!s)return;const g=s.querySelector(".portfolio-category-grid"),b=s.querySelector(".portfolio-more");if(!g||!b)return;const a=[...g.querySelectorAll("figure")],n=4;function u(e){a.forEach((x,i)=>x.style.display=e||i<n?"":"none");b.textContent=e?"Show Less":"View More";b.setAttribute("aria-expanded",e?"true":"false")}u(false);b.addEventListener("click",()=>u(b.getAttribute("aria-expanded")!=="true"));});</script></body>
+</html>
