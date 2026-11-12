@@ -166,7 +166,33 @@ h2{font-family:"Cormorant Garamond",serif;font-size:clamp(44px,6vw,72px);font-we
   max-width:780px;
 }
 
-#love-stories .portfolio-category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}#love-stories .portfolio-category-grid figure{margin:0;overflow:hidden}#love-stories .portfolio-category-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}#love-stories .portfolio-more-wrap{text-align:center;margin-top:22px}@media(max-width:768px){#love-stories .portfolio-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}</style>
+#love-stories .portfolio-category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}#love-stories .portfolio-category-grid figure{margin:0;overflow:hidden}#love-stories .portfolio-category-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}#love-stories .portfolio-more-wrap{text-align:center;margin-top:22px}@media(max-width:768px){#love-stories .portfolio-category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+/* Larger, clearly visible Sharp VT Creation logo across desktop and mobile. */
+.brand{
+  height:108px!important;
+  flex:0 0 235px!important;
+  max-width:235px!important;
+}
+.brand-logo{
+  width:235px!important;
+  height:108px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+}
+@media(max-width:1120px) and (min-width:851px){
+  .brand{height:98px!important;flex-basis:215px!important;max-width:215px!important}
+  .brand-logo{width:215px!important;height:98px!important}
+}
+@media(max-width:850px){
+  .brand{height:82px!important;flex:0 1 195px!important;max-width:195px!important}
+  .brand-logo{width:195px!important;height:82px!important}
+}
+@media(max-width:520px){
+  .brand{height:76px!important;flex:0 1 180px!important;max-width:180px!important}
+  .brand-logo{width:180px!important;height:76px!important}
+}
+
+</style>
 <style>
 /* Final requested adjustment: slightly more left spacing for hero text */
 .hero-content {
