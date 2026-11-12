@@ -816,6 +816,44 @@ h2{color:#e8edf5}
 <script id="sharp-contact-form-submit">
 (()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener,noreferrer');});})();
 </script>
+
+<style id="sharp-vt-logo-size-final-fix">
+/* Make the logo artwork visibly larger; reserve enough header height for it. */
+.nav-in{min-height:118px!important;gap:24px!important}
+.brand{
+  height:112px!important;
+  flex:0 0 285px!important;
+  max-width:285px!important;
+  min-width:285px!important;
+  overflow:visible!important;
+}
+.brand-logo{
+  display:block!important;
+  width:285px!important;
+  height:112px!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  transform:scale(1.12)!important;
+  transform-origin:left center!important;
+}
+@media(max-width:1120px) and (min-width:851px){
+  .nav-in{gap:15px!important}
+  .brand{height:100px!important;flex-basis:245px!important;max-width:245px!important;min-width:245px!important}
+  .brand-logo{width:245px!important;height:100px!important}
+}
+@media(max-width:850px){
+  .nav-in{min-height:94px!important;gap:12px!important}
+  .brand{height:88px!important;flex:0 0 220px!important;max-width:220px!important;min-width:220px!important}
+  .brand-logo{width:220px!important;height:88px!important;transform:scale(1.08)!important}
+}
+@media(max-width:520px){
+  .nav-in{min-height:86px!important}
+  .brand{height:82px!important;flex:0 0 205px!important;max-width:205px!important;min-width:205px!important}
+  .brand-logo{width:205px!important;height:82px!important;transform:scale(1.08)!important}
+}
+</style>
+
 </head>
 <body>
 <nav class="nav" id="nav">
