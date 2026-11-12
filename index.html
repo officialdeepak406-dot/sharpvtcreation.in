@@ -657,6 +657,57 @@ h2{color:#e8edf5}
  .floating-social{width:45px;height:45px}
 }
 </style>
+
+<style id="sharp-vt-hero-below-header-fix">
+/* Keep the translucent Arun-inspired header in normal document flow.
+   The hero image begins below it, so the first slide is never covered by the nav. */
+.nav,
+.nav.scrolled{
+  position:sticky;
+  top:0;
+  z-index:50;
+  width:100%;
+  background:rgba(8,9,10,.78);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  backdrop-filter:blur(12px) saturate(115%);
+  -webkit-backdrop-filter:blur(12px) saturate(115%);
+}
+.nav.scrolled{
+  background:rgba(8,9,10,.84);
+  border-bottom-color:rgba(255,255,255,.09);
+}
+.hero{
+  min-height:calc(100svh - 82px);
+  min-height:calc(100vh - 82px);
+  padding-top:0;
+  align-items:center;
+  scroll-margin-top:82px;
+}
+.hero-slides,.hero-slide{
+  inset:0;
+  height:100%;
+}
+.hero-slide{
+  object-position:center 48%;
+}
+@media(max-width:850px){
+  .nav,.nav.scrolled{background:rgba(8,9,10,.80)}
+  .hero{
+    min-height:calc(100svh - 65px);
+    min-height:calc(100vh - 65px);
+    padding-top:0;
+  }
+  .hero-slide{object-position:58% center}
+}
+@media(max-width:520px){
+  .hero{
+    min-height:calc(92svh - 56px);
+    min-height:calc(92vh - 56px);
+  }
+  .hero-slide{object-position:60% center}
+}
+</style>
+
 </head>
 <body>
 <nav class="nav" id="nav">
