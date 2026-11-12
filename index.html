@@ -776,13 +776,53 @@ h2{color:#e8edf5}
 }
 </style>
 
+
+<style id="sharp-contact-form-refresh">
+.contact-section{background:linear-gradient(180deg,#0b1422 0%,#09111e 100%);padding:105px 0 115px}
+.contact-section .section-head{margin-bottom:42px}
+.contact-section .section-head h2{color:#f4eee4}
+.contact-section .section-head p{color:#aab8ca}
+.contact-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:54px;align-items:stretch}
+.contact-details{padding:38px 12px 30px 0}
+.contact-details h3,.form-heading h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:.98}
+.contact-details h3{font-size:clamp(42px,5vw,64px);margin:17px 0 20px;color:#f4eee4}
+.contact-intro{max-width:390px;color:#aab8ca;font-size:14px;line-height:1.85;margin:0 0 34px}
+.contact-detail{display:flex;align-items:center;gap:16px;margin:22px 0;color:#f4eee4}
+.contact-icon{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(199,166,106,.5);border-radius:50%;display:grid;place-items:center;color:#d8b77d;font-size:18px}
+.contact-detail small{display:block;color:#91a2b8;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px}
+.contact-detail strong{font-size:14px;font-weight:500;line-height:1.6}
+.contact-note{margin-top:42px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);color:#c4b18e;font-family:"Cormorant Garamond",serif;font-size:21px}
+.contact-note span{color:#c7a66a;margin-right:8px}
+.contact-form{padding:38px;background:#111e30;border:1px solid rgba(199,166,106,.24);box-shadow:0 24px 65px rgba(0,0,0,.2)}
+.form-heading{margin-bottom:25px}
+.form-heading h3{font-size:38px;color:#f4eee4;margin:10px 0}
+.form-heading p{font-size:13px;color:#aab8ca;margin:0;line-height:1.7}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 15px}
+.form-grid label{display:flex;flex-direction:column;gap:9px;color:#d7deea;font-size:11px;letter-spacing:.04em}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;min-width:0;background:#0b1626;border:1px solid rgba(255,255,255,.13);border-radius:2px;padding:15px 14px;color:#f4eee4;font:13px "DM Sans",sans-serif;outline:none;transition:border-color .2s,box-shadow .2s}
+.form-grid input,.form-grid select{height:50px}
+.form-grid textarea{resize:vertical;min-height:112px;line-height:1.6}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:#718198}
+.form-grid select:invalid{color:#718198}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{border-color:#c7a66a;box-shadow:0 0 0 2px rgba(199,166,106,.12)}
+.form-full{grid-column:1/-1}
+.contact-submit{width:100%;margin-top:22px;min-height:54px;border:1px solid #c7a66a;background:linear-gradient(100deg,#c7a66a,#e2c89e);color:#111;font:700 13px "DM Sans",sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px;transition:filter .2s,transform .2s}
+.contact-submit:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.contact-submit span{font-size:18px}
+.form-privacy{font-size:10px;color:#8392a6;text-align:center;margin:13px 0 0}
+@media(max-width:850px){.contact-layout{grid-template-columns:1fr;gap:25px}.contact-details{padding:10px 0}.contact-note{margin-top:28px}.contact-form{padding:30px 24px}}
+@media(max-width:520px){.contact-section{padding:75px 0}.contact-section .section-head{display:block}.contact-section .section-head p{margin-top:18px}.form-grid{grid-template-columns:1fr;gap:15px}.form-full{grid-column:auto}.contact-form{padding:25px 18px}.form-heading h3{font-size:33px}.contact-details h3{font-size:48px}}
+</style>
+<script id="sharp-contact-form-submit">
+(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener,noreferrer');});})();
+</script>
 </head>
 <body>
 <nav class="nav" id="nav">
 <div class="wrap nav-in">
 <a aria-label="Sharp vt Creation home" class="brand" href="#"><img alt="Sharp vt Creation" class="brand-logo" src="assets/sharp-vt-creation-logo.png"/></a>
 <div class="links" aria-label="Main navigation">
-<a class="active" href="#">Home</a><a href="#portfolio">Portfolio</a><a href="#portfolio">Gallery</a><a href="#reviews">Testimonials</a><a href="#services">Services</a><a href="#about">About</a><a href="#location">Contact</a>
+<a class="active" href="#">Home</a><a href="#portfolio">Portfolio</a><a href="#portfolio">Gallery</a><a href="#reviews">Testimonials</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact-form">Contact</a>
 </div>
 <div class="nav-actions">
 <a class="nav-social nav-instagram" href="https://www.instagram.com/sharp_vt_creation_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.7" r="1" class="icon-fill"></circle></svg> Instagram</a>
@@ -791,7 +831,7 @@ h2{color:#e8edf5}
 </div>
 </div>
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-<a href="#">Home</a><a href="#portfolio">Portfolio</a><a href="#portfolio">Gallery</a><a href="#reviews">Testimonials</a><a href="#services">Services</a><a href="#about">About</a><a href="#location">Contact</a>
+<a href="#">Home</a><a href="#portfolio">Portfolio</a><a href="#portfolio">Gallery</a><a href="#reviews">Testimonials</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact-form">Contact</a>
 <a class="mobile-menu-book" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20book%20a%20photoshoot.">Book on WhatsApp ↗</a>
 </div>
 </nav>
@@ -974,7 +1014,33 @@ h2{color:#e8edf5}
 </div>
 <div class="location-right reveal"><div class="map"><iframe allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Sharp%20vt%20Creation%2C%2022%2F77%20Peramballu%20St%2C%20NN%20Garden%2C%20Washermanpet%2C%20Chennai%2C%20Tamil%20Nadu%20600021&amp;z=17&amp;output=embed" title="Sharp vt Creation location"></iframe></div></div>
 </div></section>
-<section class="cta"><div class="wrap reveal"><div class="kicker">Let's make it memorable</div><h2>Book Your Date.</h2><p>Tell us what you're planning and we'll take it from there.</p><div class="actions" style="justify-content:center"><a class="btn btn-gold wa-btn" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20book%20a%20date.">WhatsApp Us ↗</a><a class="btn btn-outline" href="tel:+919791078826">Call 97910 78826</a></div></div></section>
+<section class="section contact-section" id="contact-form">
+<div class="wrap">
+<div class="section-head reveal"><div><div class="kicker">Let's make it memorable</div><h2>Beautiful Moments<br/>Begin Here.</h2></div><p>Have a wedding, celebration or special moment coming up? Tell us a little about it. We'd love to help you preserve it beautifully.</p></div>
+<div class="contact-layout reveal">
+<div class="contact-details">
+<div class="kicker">Get in touch</div><h3>Let's talk about<br/>your special day.</h3>
+<p class="contact-intro">Share your plans with Sharp vt Creation. We'll get back to you to discuss the details and availability.</p>
+<a class="contact-detail" href="tel:+919791078826"><span class="contact-icon">☎</span><span><small>Call us</small><strong>+91 97910 78826</strong></span></a>
+<a class="contact-detail" href="https://wa.me/919791078826" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WhatsApp</small><strong>Chat with our studio</strong></span></a>
+<div class="contact-detail"><span class="contact-icon">⌖</span><span><small>Visit our studio</small><strong>NN Garden, Washermanpet,<br/>Chennai, Tamil Nadu 600021</strong></span></div>
+<div class="contact-note"><span>✦</span> Every celebration has a story. Let's capture yours.</div>
+</div>
+<form class="contact-form" id="sharpContactForm">
+<div class="form-heading"><div class="kicker">Enquiry form</div><h3>Tell us about your event</h3><p>Fill in your details and we'll connect with you on WhatsApp.</p></div>
+<div class="form-grid">
+<label>Your Name<input name="name" type="text" placeholder="Enter your name" autocomplete="name" required/></label>
+<label>Phone Number<input name="phone" type="tel" placeholder="Your contact number" autocomplete="tel" inputmode="tel" required pattern="[0-9+()\\s-]{8,18}"/></label>
+<label>Event Type<select name="event" required><option value="">Select your event</option><option>Wedding Photography</option><option>Engagement</option><option>Pre-Wedding Shoot</option><option>Baby Shoot</option><option>Baby Shower</option><option>Maternity Shoot</option><option>Puberty Function</option><option>Outdoor Photoshoot</option><option>Other Event</option></select></label>
+<label>Event / Wedding Date<input name="date" type="date"/></label>
+<label class="form-full">Tell us about your event<textarea name="message" rows="4" placeholder="Share your event location, requirements or any details you'd like us to know..."></textarea></label>
+</div>
+<button class="contact-submit" type="submit">Send Enquiry on WhatsApp <span>↗</span></button>
+<p class="form-privacy">Your details will be used only to respond to your enquiry.</p>
+</form>
+</div>
+</div>
+</section>
 <section class="social-bar"><div class="wrap social-in"><div class="social-copy"><strong>Follow Sharp vt Creation</strong> · New work, reels &amp; studio updates</div><div class="social-links">
 <a class="social-link instagram" href="https://www.instagram.com/sharp_vt_creation_/" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.7" fill="currentColor" r="1" stroke="none"></circle></svg> @sharp_vt_creation_</a>
 <a class="social-link whatsapp" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot."><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.6-1.7a11.8 11.8 0 0 0 5.3 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3ZM12.2 21.6h-.1c-1.7 0-3.3-.5-4.7-1.4l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.4Z"></path></svg> WhatsApp</a>
