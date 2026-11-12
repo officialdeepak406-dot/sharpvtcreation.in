@@ -708,6 +708,48 @@ h2{color:#e8edf5}
 }
 </style>
 
+
+<style id="sharp-vt-header-navy-logo-update">
+/* Match the header to the supplied deep navy chart swatch (#07111f). */
+.nav,
+.nav.scrolled{
+  background:rgba(7,17,31,.97)!important;
+  border-bottom:1px solid rgba(157,182,214,.16)!important;
+  backdrop-filter:blur(14px) saturate(115%);
+  -webkit-backdrop-filter:blur(14px) saturate(115%);
+}
+@media(max-width:850px){
+  .nav,.nav.scrolled{
+    background:rgba(7,17,31,.97)!important;
+    border-bottom-color:rgba(157,182,214,.16)!important;
+  }
+}
+/* Slightly larger brand mark without changing the navigation layout. */
+.brand{
+  height:88px!important;
+  flex:0 0 195px!important;
+  max-width:195px!important;
+}
+.brand-logo{
+  width:195px!important;
+  height:88px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+}
+@media(max-width:1120px) and (min-width:851px){
+  .brand{height:82px!important;flex-basis:175px!important;max-width:175px!important}
+  .brand-logo{width:175px!important;height:82px!important}
+}
+@media(max-width:850px){
+  .brand{height:66px!important;flex:0 1 165px!important;max-width:165px!important}
+  .brand-logo{width:165px!important;height:66px!important}
+}
+@media(max-width:520px){
+  .brand{height:62px!important;flex-basis:155px!important;max-width:155px!important}
+  .brand-logo{width:155px!important;height:62px!important}
+}
+</style>
+
 </head>
 <body>
 <nav class="nav" id="nav">
