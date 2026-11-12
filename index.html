@@ -179,13 +179,99 @@ h2{font-family:"Cormorant Garamond",serif;font-size:clamp(44px,6vw,72px);font-we
   }
 }
 </style>
+<style id="sharp-vt-homepage-redesign">
+/* Sharp VT Creation homepage refresh — desktop and mobile */
+.nav{position:absolute;top:0;left:0;right:0;padding:16px 0 13px;background:linear-gradient(180deg,rgba(7,7,8,.88),rgba(7,7,8,.44));border-bottom:1px solid rgba(255,255,255,.10);backdrop-filter:blur(9px);transition:background .25s,padding .25s}
+.nav.scrolled{position:fixed;padding:9px 0;background:rgba(8,8,9,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav-in{min-height:78px;gap:28px}
+.brand{height:78px;flex:0 0 245px;max-width:245px}
+.brand-logo{width:100%;height:100%;object-fit:contain;object-position:left center;filter:brightness(0) invert(1)}
+.links{display:flex;align-items:center;justify-content:center;gap:clamp(14px,2vw,30px);flex:1;font-size:13px;color:#f5f0e8}
+.links a{position:relative;padding:12px 0;white-space:nowrap;color:#f5f0e8}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:5px;height:1px;background:#d9b889;transition:right .25s}
+.links a:hover:after{right:0}
+.nav-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.nav .nav-cta{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:999px;background:#e8c7a2!important;border:1px solid #e8c7a2!important;color:#17120e!important;font-size:12px;font-weight:700;white-space:nowrap}
+.nav .nav-cta:hover{background:#f3d8b8!important;transform:translateY(-1px)}
+.nav-social{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid rgba(255,255,255,.42);border-radius:999px;color:#fff;font-size:12px;white-space:nowrap;transition:.2s}
+.nav-social:hover{border-color:#e8c7a2;color:#e8c7a2}
+.mobile-menu-toggle,.mobile-menu{display:none}
+.hero{min-height:100svh;min-height:100vh;align-items:center;padding-top:112px}
+.hero:before{background:linear-gradient(90deg,rgba(5,5,6,.88) 0%,rgba(5,5,6,.67) 34%,rgba(5,5,6,.18) 76%),linear-gradient(0deg,#090909 0%,rgba(9,9,9,.05) 34%,rgba(9,9,9,.12) 100%)}
+.hero-slide{object-position:center 46%}
+.hero-content{max-width:700px;padding:90px 0 90px 28px;margin:0 auto 0 0}
+.hero .eyebrow{letter-spacing:.28em;color:#e3bd8b;margin-bottom:24px}
+.hero h1{font-size:clamp(66px,8.2vw,112px);line-height:.88;letter-spacing:-.045em;color:#f7f0e6;margin-bottom:26px}
+.hero p{max-width:580px;color:rgba(255,255,255,.84);font-size:15px;line-height:1.8}
+.hero .actions{gap:14px;margin-top:32px}
+.hero .btn{min-height:48px;padding:14px 23px}
+.hero .btn-gold,.hero .wa-btn{background:#e8c7a2!important;border:1px solid #e8c7a2!important;color:#17120e!important}
+.hero .btn-gold:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.hero .btn-outline{border:1px solid rgba(255,255,255,.72);background:rgba(0,0,0,.16);color:#fff}
+.hero .btn-outline:hover{border-color:#e8c7a2;color:#e8c7a2}
+@media(max-width:1050px) and (min-width:851px){
+ .brand{flex-basis:205px;max-width:205px}.links{gap:13px;font-size:12px}.nav-social{display:none}
+}
+@media(max-width:850px){
+ .nav{padding:8px 0;background:linear-gradient(180deg,rgba(5,5,6,.88),rgba(5,5,6,.28));}
+ .nav.scrolled{padding:6px 0}
+ .nav-in{min-height:68px;gap:10px}
+ .brand{height:64px;flex:0 1 190px;max-width:190px}
+ .brand-logo{width:100%;height:100%;object-position:left center}
+ .links,.nav-social{display:none}
+ .nav-actions{margin-left:auto}
+ .nav .nav-cta{padding:11px 15px;font-size:11px}
+ .mobile-menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;padding:10px;border:1px solid rgba(255,255,255,.4);border-radius:50%;background:rgba(0,0,0,.2);cursor:pointer}
+ .mobile-menu-toggle span{display:block;width:19px;height:1.5px;background:#fff;transition:transform .2s,opacity .2s}
+ .mobile-menu-toggle[aria-expanded="true"] span:first-child{transform:translateY(6.5px) rotate(45deg)}
+ .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+ .mobile-menu-toggle[aria-expanded="true"] span:last-child{transform:translateY(-6.5px) rotate(-45deg)}
+ .mobile-menu{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:8px 5vw 18px;background:rgba(8,8,9,.97);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px);opacity:0;visibility:hidden;transform:translateY(-8px);transition:.2s}
+ .mobile-menu.is-open{opacity:1;visibility:visible;transform:none}
+ .mobile-menu a{padding:13px 2px;color:#f4eee4;border-bottom:1px solid rgba(255,255,255,.09);font-size:14px}
+ .mobile-menu .mobile-menu-book{margin-top:12px;padding:13px 18px;text-align:center;background:#e8c7a2;color:#17120e;border:0;border-radius:999px;font-weight:700}
+ .hero{min-height:100svh;padding-top:90px;align-items:end}
+ .hero:before{background:linear-gradient(90deg,rgba(5,5,6,.68),rgba(5,5,6,.18)),linear-gradient(0deg,rgba(5,5,6,.96) 0%,rgba(5,5,6,.48) 42%,rgba(5,5,6,.10) 100%)}
+ .hero-slide{object-position:58% center}
+ .hero-content{max-width:680px;padding:120px 22px 76px;margin:0;width:100%}
+ .hero h1{font-size:clamp(58px,12vw,86px);line-height:.9}
+ .hero p{font-size:14px;line-height:1.7;max-width:540px}
+}
+@media(max-width:520px){
+ .nav-in{min-height:62px}
+ .brand{height:58px;flex-basis:154px;max-width:154px}
+ .nav .nav-cta{padding:10px 12px;font-size:10px}
+ .mobile-menu-toggle{width:39px;height:39px}
+ .hero{min-height:92svh;min-height:92vh}
+ .hero-slide{object-position:61% center}
+ .hero-content{padding:110px 20px 66px}
+ .hero .eyebrow{font-size:9px;letter-spacing:.22em;margin-bottom:18px}
+ .hero h1{font-size:clamp(54px,13vw,68px);margin-bottom:20px}
+ .hero p{font-size:13px;line-height:1.65}
+ .hero .actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:24px}
+ .hero .btn{width:100%;min-height:46px;padding:13px 16px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.mobile-menu,.mobile-menu-toggle span,.nav{transition:none}}
+</style>
 </head>
 <body>
-<nav class="nav" id="nav"><div class="wrap nav-in">
+<nav class="nav" id="nav">
+<div class="wrap nav-in">
 <a aria-label="Sharp vt Creation home" class="brand" href="#"><img alt="Sharp vt Creation" class="brand-logo" src="assets/sharp-vt-creation-logo.png"/></a>
-<div class="links"><a href="#portfolio">Portfolio</a><a href="#films">Films</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#location">Location</a></div>
-<a class="nav-cta" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot.">WhatsApp</a>
-</div></nav>
+<div class="links" aria-label="Main navigation">
+<a href="#portfolio">Portfolio</a><a href="#films">Films</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#location">Contact</a>
+</div>
+<div class="nav-actions">
+<a class="social-link instagram nav-social" href="https://www.instagram.com/sharp_vt_creation_/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+<a class="nav-cta" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot.">WhatsApp Us</a>
+<button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+</div>
+</div>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+<a href="#portfolio">Portfolio</a><a href="#films">Films</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#location">Contact & Location</a>
+<a class="mobile-menu-book" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20book%20a%20photoshoot.">Book on WhatsApp ↗</a>
+</div>
+</nav>
 <header class="hero">
 <div aria-label="Featured photography" class="hero-slides">
 <img alt="Sharp vt Creation wedding photography" class="hero-slide active" fetchpriority="high" src="assets/home-hero-1.jpg"/>
@@ -393,5 +479,8 @@ document.querySelectorAll('.portfolio-more-btn').forEach(btn=>{
 const filmMore=document.getElementById('filmMore');
 filmMore?.addEventListener('click',()=>{const extras=document.querySelectorAll('.film-extra');const open=filmMore.getAttribute('aria-expanded')==='true';extras.forEach(card=>card.style.display=open?'none':'block');filmMore.setAttribute('aria-expanded',String(!open));filmMore.textContent=open?'View More Films ↓':'Show Less ↑';});
 </script>
-<script>document.addEventListener("DOMContentLoaded",()=>{const s=document.getElementById("love-stories");if(!s)return;const g=s.querySelector(".portfolio-category-grid"),b=s.querySelector(".portfolio-more");if(!g||!b)return;const a=[...g.querySelectorAll("figure")],n=4;function u(e){a.forEach((x,i)=>x.style.display=e||i<n?"":"none");b.textContent=e?"Show Less":"View More";b.setAttribute("aria-expanded",e?"true":"false")}u(false);b.addEventListener("click",()=>u(b.getAttribute("aria-expanded")!=="true"));});</script></body>
+<script>document.addEventListener("DOMContentLoaded",()=>{const s=document.getElementById("love-stories");if(!s)return;const g=s.querySelector(".portfolio-category-grid"),b=s.querySelector(".portfolio-more");if(!g||!b)return;const a=[...g.querySelectorAll("figure")],n=4;function u(e){a.forEach((x,i)=>x.style.display=e||i<n?"":"none");b.textContent=e?"Show Less":"View More";b.setAttribute("aria-expanded",e?"true":"false")}u(false);b.addEventListener("click",()=>u(b.getAttribute("aria-expanded")!=="true"));});</script><script id="sharp-vt-mobile-navigation">
+(()=>{const toggle=document.getElementById('mobileMenuToggle');const menu=document.getElementById('mobileMenu');if(!toggle||!menu)return;const close=()=>{toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation menu');menu.classList.remove('is-open');menu.setAttribute('aria-hidden','true')};toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');menu.classList.toggle('is-open',open);menu.setAttribute('aria-hidden',String(!open))});menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});window.addEventListener('resize',()=>{if(window.innerWidth>850)close()})})();
+</script>
+</body>
 </html>
