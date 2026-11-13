@@ -814,7 +814,8 @@ h2{color:#e8edf5}
 @media(max-width:520px){.contact-section{padding:75px 0}.contact-section .section-head{display:block}.contact-section .section-head p{margin-top:18px}.form-grid{grid-template-columns:1fr;gap:15px}.form-full{grid-column:auto}.contact-form{padding:25px 18px}.form-heading h3{font-size:33px}.contact-details h3{font-size:48px}}
 </style>
 <script id="sharp-contact-form-submit">
-(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener,noreferrer');});})();
+(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('
+'));window.open(url,'_blank','noopener,noreferrer');});})();
 </script>
 
 <style id="sharp-vt-logo-size-final-fix">
@@ -997,7 +998,9 @@ h2{color:#e8edf5}
 }
 </style>
 
-\n<style>.admin-entry{display:inline-flex;align-items:center;border:1px solid #c7a66a66;padding:9px 13px;border-radius:3px;color:#c7a66a;font-size:11px;letter-spacing:.08em}.admin-entry:hover{background:#c7a66a;color:#101010}@media(max-width:850px){.admin-entry{display:none}}</style>\n</head>
+
+<style>.admin-entry{display:inline-flex;align-items:center;border:1px solid #c7a66a66;padding:9px 13px;border-radius:3px;color:#c7a66a;font-size:11px;letter-spacing:.08em}.admin-entry:hover{background:#c7a66a;color:#101010}@media(max-width:850px){.admin-entry{display:none}}</style>
+</head>
 <body>
 <nav class="nav" id="nav">
 <div class="wrap nav-in">
@@ -1272,5 +1275,8 @@ filmMore?.addEventListener('click',()=>{const extras=document.querySelectorAll('
 <script id="sharp-vt-arun-inspired-slider">
 (()=>{const slides=[...document.querySelectorAll('.hero-slide')];const dots=[...document.querySelectorAll('.hero-dot')];const prev=document.querySelector('.hero-prev');const next=document.querySelector('.hero-next');if(!slides.length)return;let index=0;let timer;const show=(n)=>{index=(n+slides.length)%slides.length;slides.forEach((el,i)=>el.classList.toggle('active',i===index));dots.forEach((el,i)=>el.classList.toggle('active',i===index));};const start=()=>{clearInterval(timer);timer=setInterval(()=>show(index+1),5000)};prev?.addEventListener('click',()=>{show(index-1);start()});next?.addEventListener('click',()=>{show(index+1);start()});dots.forEach(dot=>dot.addEventListener('click',()=>{show(Number(dot.dataset.slide));start()}));start();})();
 </script>
-\n<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>\n<script src="cms.js"></script>\n</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
+<script src="cms.js"></script>
+</body>
 </html>
