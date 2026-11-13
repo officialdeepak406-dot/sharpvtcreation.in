@@ -814,8 +814,7 @@ h2{color:#e8edf5}
 @media(max-width:520px){.contact-section{padding:75px 0}.contact-section .section-head{display:block}.contact-section .section-head p{margin-top:18px}.form-grid{grid-template-columns:1fr;gap:15px}.form-full{grid-column:auto}.contact-form{padding:25px 18px}.form-heading h3{font-size:33px}.contact-details h3{font-size:48px}}
 </style>
 <script id="sharp-contact-form-submit">
-(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('
-'));window.open(url,'_blank','noopener,noreferrer');});})();
+(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\\n'));window.open(url,'_blank','noopener,noreferrer');});})();
 </script>
 
 <style id="sharp-vt-logo-size-final-fix">
