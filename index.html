@@ -814,7 +814,7 @@ h2{color:#e8edf5}
 @media(max-width:520px){.contact-section{padding:75px 0}.contact-section .section-head{display:block}.contact-section .section-head p{margin-top:18px}.form-grid{grid-template-columns:1fr;gap:15px}.form-full{grid-column:auto}.contact-form{padding:25px 18px}.form-heading h3{font-size:33px}.contact-details h3{font-size:48px}}
 </style>
 <script id="sharp-contact-form-submit">
-(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\n'));window.open(url,'_blank','noopener,noreferrer');});})();
+(()=>{const form=document.getElementById('sharpContactForm');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hi Sharp vt Creation, I would like to enquire about a photoshoot/event.','',`Name: ${d.get('name')}`,`Phone: ${d.get('phone')}`,`Event: ${d.get('event')}`,`Event date: ${d.get('date')||'Not decided'}`,`Details: ${d.get('message')||'Not provided'}`];const url='https://wa.me/919791078826?text='+encodeURIComponent(lines.join('\\n'));window.open(url,'_blank','noopener,noreferrer');});})();
 </script>
 
 <style id="sharp-vt-logo-size-final-fix">
@@ -997,6 +997,8 @@ h2{color:#e8edf5}
 }
 </style>
 
+
+<style>.admin-entry{display:inline-flex;align-items:center;justify-content:center;align-self:center;flex:0 0 auto;width:auto;min-height:0;padding:12px 19px;border:1px solid #d8b875;border-radius:999px;background:linear-gradient(135deg,#e4c88e 0%,#c7a66a 55%,#a98243 100%);color:#17130c;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;white-space:nowrap;box-shadow:0 5px 18px #c7a66a2b;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}.admin-entry:hover{color:#100d08;filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 8px 24px #c7a66a45}@media(max-width:850px){.admin-entry{margin:8px 0;padding:10px 16px}}</style>
 </head>
 <body>
 <nav class="nav" id="nav">
@@ -1226,7 +1228,7 @@ h2{color:#e8edf5}
 <a class="social-link instagram" href="https://www.instagram.com/sharp_vt_creation_/" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.7" fill="currentColor" r="1" stroke="none"></circle></svg> @sharp_vt_creation_</a>
 <a class="social-link whatsapp" href="https://wa.me/919791078826?text=Hi%20Sharp%20vt%20Creation%2C%20I%27d%20like%20to%20enquire%20about%20a%20photoshoot."><svg fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.8L.2 24l6.6-1.7a11.8 11.8 0 0 0 5.3 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3ZM12.2 21.6h-.1c-1.7 0-3.3-.5-4.7-1.4l-.3-.2-3.9 1 1-3.8-.2-.3a9.8 9.8 0 1 1 8.2 4.7Zm5.4-7.3c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.7.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.4Z"></path></svg> WhatsApp</a>
 </div></div></section>
-<footer class="footer"><div class="wrap footer-in"><div><img alt="Sharp vt Creation" class="footer-logo" src="assets/sharp-vt-creation-logo.png"/><div>Photography Studio</div></div><div>22/77 Peramballu St, NN Garden, Washermanpet, Chennai · <a href="tel:+919791078826">97910 78826</a> · <a href="tel:+917812805350">78128 05350</a></div><div>© 2026 Sharp vt Creation</div></div></footer>
+<footer class="footer"><div class="wrap footer-in"><div><img alt="Sharp vt Creation" class="footer-logo" src="assets/sharp-vt-creation-logo.png"/><div>Photography Studio</div></div><div>22/77 Peramballu St, NN Garden, Washermanpet, Chennai · <a href="tel:+919791078826">97910 78826</a> · <a href="tel:+917812805350">78128 05350</a></div><div>© 2026 Sharp vt Creation</div><a class="admin-entry" href="admin.html">Studio Admin ↗</a></div></footer>
 <div class="lightbox" id="lightbox"><span class="close" id="close">×</span><img alt="" id="lightboxImg"/></div>
 <script>
 const heroSlides=[...document.querySelectorAll('.hero-slide')];
@@ -1272,5 +1274,8 @@ filmMore?.addEventListener('click',()=>{const extras=document.querySelectorAll('
 <script id="sharp-vt-arun-inspired-slider">
 (()=>{const slides=[...document.querySelectorAll('.hero-slide')];const dots=[...document.querySelectorAll('.hero-dot')];const prev=document.querySelector('.hero-prev');const next=document.querySelector('.hero-next');if(!slides.length)return;let index=0;let timer;const show=(n)=>{index=(n+slides.length)%slides.length;slides.forEach((el,i)=>el.classList.toggle('active',i===index));dots.forEach((el,i)=>el.classList.toggle('active',i===index));};const start=()=>{clearInterval(timer);timer=setInterval(()=>show(index+1),5000)};prev?.addEventListener('click',()=>{show(index-1);start()});next?.addEventListener('click',()=>{show(index+1);start()});dots.forEach(dot=>dot.addEventListener('click',()=>{show(Number(dot.dataset.slide));start()}));start();})();
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
+<script src="cms.js"></script>
 </body>
 </html>
